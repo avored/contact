@@ -13,7 +13,9 @@
     "minimum-stability": "dev",
     "require": {
         "php": ">=7.0.0",
-        "avored/module-installer": "dev-master"
+      "avored/module-installer": "1.*",
+      "avored/framework": "1.*",
+      "avored/ecommerce": "1.*"
     },
   "autoload": {
     "psr-4": {
