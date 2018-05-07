@@ -3,8 +3,7 @@
 namespace AvoRed\Contact\Http\Controllers;
 
 use AvoRed\Contact\Http\Requests\ContactRequest;
-use AvoRed\Ecommerce\Models\Database\Configuration;
-use Illuminate\Http\Request;
+use AvoRed\Framework\Models\Database\Configuration;
 use App\Http\Controllers\Controller;
 use AvoRed\Contact\Mails\ContactMail;
 use AvoRed\Contact\Mails\ContactMailRequest;
@@ -17,10 +16,8 @@ class ContactController extends Controller
     }
 
     public function send(ContactRequest $request) {
-        //return $request->all();
 
-        $configuration = new Configuration();
-        $adminEmail = $configuration->getConfiguration('general_administrator_email');
+        $adminEmail = Configuration::getConfiguration('general_administrator_email');
 
         // Sent an EMail to AvoRed Administrator
         Mail::to($adminEmail)->send(new ContactMailRequest($request));
