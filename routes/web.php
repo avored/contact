@@ -10,7 +10,7 @@
   | and give it the controller to call when that URI is requested.
   |
  */
-
+use Illuminate\Support\Facades\Route;
 
 Route::middleware(['web'])
     ->namespace('AvoRed\Contact\Http\Controllers')
