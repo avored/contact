@@ -25,7 +25,6 @@
 	"require" : {
 		"php" : ">=7.0.0",
 		"avored/module-installer" : "1.*",
-		"avored/framework" : "dev-master",
 		"avored/ecommerce" : "dev-master"
 	},
 	"autoload" : {
