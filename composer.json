@@ -24,7 +24,7 @@
 	"require" : {
 		"php" : ">=7.0.0",
 		"avored/module-installer" : "1.*",
-		"avored/ecommerce" : "1.*"
+		"avored/ecommerce" : "2.*"
 	},
 	"autoload" : {
 		"psr-4" : {
